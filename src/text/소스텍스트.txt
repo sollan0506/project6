@@ -1,0 +1,128 @@
+
+[ 프로젝트 6 텍스트 소스  ]
+
+
+===============================================
+
+[ HEADER 영역 ]
+  
+  1. Logo  -  MUSIC STATE
+
+  2. GNB
+   HOME    PAGES    FEATURES     BLOG    TYPOGRAPHY    EASYBLOG    JOMSOCIAL 
+
+  3. LOG IN
+
+
+[ BEST ALBUMS 영역 ]
+
+  *  앨범 텍스트
+
+      ROBERT GAVICK
+      SINGLE POST
+      SAMPLE
+      
+      Music News
+      2013-11-01
+
+	앨범 사이즈: 195 * 189
+
+  
+[ FEATURED ARTISTS 영역 ]
+  
+ 1. 타이틀
+     FEATURED ARTISTS
+
+  2. 서브텍스트
+     THIS SECTION USES GK MODULE WHICH ALLOWS YOU TO FREELY PLACE
+     ANY CONTENT YOU WANT. SUCH CONTENT MAY COME 
+    FROM JOMSOCIAL STREEM OR FROM K2 ARTICLES.
+
+
+[ NEWS 영역 ]
+
+  1. 타이틀 -  NEWS
+   
+   MOSIC NEWS
+   SINGLE POST 
+   SAMPLE
+
+   OCTOBER 31. 2013
+
+
+   2. 서브 텍스트   
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque          volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh,          viverra non, semper suscipit, posuere a, pede.
+
+
+
+
+[ NEWSLETTER 영역 ]
+
+   1. 타이틀 -  NEWSLETTER
+
+   2. 서브 텍스트   
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam malesuada 
+   erat ut turpis. 
+   Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+
+   3. 버튼 텍스트   -  YOUR E-MAIL ADRESS
+
+
+[ TOP USERS 영역 ]
+
+  1. 타이틀 -  TOP USERS
+
+  1) SUPER USER
+  2) CAMILA WHITE
+  3) CHLOE BUTLER
+  4) JACOB SMITH
+  5) JOHNTIMER
+  6) STEFAN
+  7) SHUBHAM KHULLAR
+  8) SHUBHAM KHULLAR
+  9) FERP
+  10) BRIANT KING
+
+
+  2. 폰트아이콘
+     1)  fa-star-o
+     2)  fa-thumbs-o-up
+     3)  fa-eye
+     4)  fa-angle-down
+  
+
+
+[ Footer 영역 ]
+
+   1. f-top 영역
+      
+      1) Title
+           THERE ARE MANY VARIATIONS OF
+           PASSAGES LOREM IPSIM AVAILABLE
+
+       2) Sub Title
+           - SERVICE      MUSIC     ARTIST     PRIVACY     SOUND
+    
+       3) Sub Text
+
+         *  FREQUENTLY ASKED
+             lorem ipsum dolor 
+
+         *  SERVICE UPDATES
+             lorem ipsum dolor
+
+         *  COMMUNITY FORUM
+             lorem ipsum dolor
+
+        *  HELP DESK
+            lorem ipsum dolor
+
+        *  VALIDATE LICENSE
+            lorem ipsum dolor
+
+
+   2. f-bottom 영역
+
+     * Copyright 텍스트 - Copyright 2020@JMC.COM    All Rights Reserved. 
+
+

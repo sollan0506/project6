@@ -1,0 +1,484 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ********************** 레이아웃 구성시작 *********************** */
+#wrap, #wrap>div {width: 100%;}
+
+#header {height: 63px; }
+#intro {height: 92vh;}
+#album {height: 798px;}
+#artist {height: 1029px;}
+#news {height: 758px;}
+#news-letter {height: 882px;}
+#users{height: 714px;}
+#footer {height: 1008px;}
+#footer .f-top {height: 504px;}
+#footer .f-bottom {height: 189px; }
+
+.container{ 
+  width: 1170px; height: 100%; margin: auto;
+  position: relative;
+}
+
+ 
+/* ********************** 공통영역 선언시작 *********************** */
+ /* Scroll Button Setting */
+ .scroll-btn{
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  text-align: center; line-height: 48px;
+  position: absolute; left: 50%; bottom: 50px;
+  margin-left: -27px; font-size: 5em;
+  z-index: 10; /*덮여서 안보이는 현상 방지*/
+ }
+ .scroll-btn:hover {color: #fc0; border: 2px solid #fc0;}
+ .scroll-btn1{ border: 2px solid #fff; color: #fff; }
+ .scroll-btn2{ border: 2px solid #222; color: #222;}
+
+
+
+/* ********************** 개별영역 선언시작 *********************** */
+
+
+
+/* *************** header Area Start ***************** */
+#header {background-color: #333;}
+
+/* Site logo */
+#header h1 { width: 170px; height: 63px; float: left; margin-right: 150px;}
+#header h1 a { 
+  display: block; width: 100%; height: 100%;
+  font: 700 1.2em/63px 'Roboto', sans-serif;
+  color: #fff;
+}
+
+/* gnb */
+#header .gnb {width: 580px; height: 63px; padding-top: 21px; float: left;}
+#header .gnb li {height: 21px; float: left; }
+#header .gnb li a{ 
+  display: block; height: 100%; padding: 0 10px; 
+  font: 400 1em/21px 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#header .gnb li a:hover{color: #fc0;}
+
+/* login button */
+#header .login-btn {
+  width: 70px; height: 63px;
+  float: right; text-align: right;
+  padding-top: 15px;
+}
+#header .login-btn a{
+  display: inline-block; width: 62px; height: 32px;
+  color: #fff; background-color: #ff4413;
+  font: 400 1.2em/32px 'Nanum Gothic', sans-serif;
+  text-align: center;
+}
+
+
+/* *************** intro Area Start ***************** */
+#intro .slider-wrap, 
+#intro .slider-items,
+#intro .slider-item{
+  width: 100%; height: 100%;
+}
+#intro .slider-wrap { position: relative; }
+
+/* Slider-item Start */
+#intro .slider-item{
+  background: url(../images/slider-bg.png) no-repeat top center;
+  background-size: cover;
+}
+#intro .slider-item .caption{
+  width: 600px; height: auto; 
+  color: #fff;
+  text-align: center;
+  padding: 40px 30px;
+  
+  position: absolute; left: 50%; top: 50%;
+  
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#intro .slider-item .caption .deco-text {
+  width: 350px; height: 25px; margin: 0 auto 21px;
+  font: 400 1.4em/25px 'Nanum Gothic', sans-serif;
+  background: #ffb76b; 
+  background: -moz-linear-gradient(-45deg, #ffb76b 0%, #ed4204 100%); 
+  background: -webkit-linear-gradient(-45deg, #ffb76b 0%,#ed4204 100%);
+  background: linear-gradient(135deg, #ffb76b 0%,#ed4204 100%); 
+}
+#intro .slider-item .caption h2 {
+  width: 100%; height: auto; margin-bottom: 42px;
+  font: 500 7em/0.9 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+#intro .slider-item .caption p {
+  font-size: 1.6em; color: rgba(255, 255, 255, 0.6);
+}
+
+/* Pager Start */
+#intro .slider-wrap .pager {
+  width: 6px; height: 86px;
+  position: absolute; right: 0; top: 50%; margin-top: -43px;
+}
+#intro .slider-wrap .pager ul {
+  width: 100%; height: 100%;
+}
+#intro .slider-wrap .pager li {
+  width: 100%; height: 43px; border: 1px solid #ccc;
+}
+#intro .slider-wrap .pager li:last-child {
+  border: 0;
+}
+#intro .slider-wrap .pager li a{
+  display: block;
+  text-indent: -9999px; overflow: hidden;
+  width: 100%; height: 100%; background-color: #fff;
+}
+#intro .slider-wrap .pager li a:hover{
+  background-color: #ff4413;
+}
+
+/* 활성화 클래스 */
+.slider-act {
+  background-color: #ff4413 !important;
+}
+
+
+
+/* *************** album Area Start ***************** */
+#album{padding: 105px 0 0;}
+
+/* Title Area Start */
+#album .title {
+  width: 100%; height: 63px; margin-bottom: 84px;
+}
+#album .title h2 {
+  width: 100%; height: 100%;
+  font: 500 6em/63px 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* Content Area Start */
+#album .content{width: 100%; height: 378px;}
+#album .content>div{
+  width: 33.3%; height: 189px; float: left;
+}
+#album .content>div>div, 
+#album .content>div>img {width: 50%; height: 100%; float: left;}
+#album .content>div:nth-child(-n+3)>div {float: right;}
+
+#album .album-box>div {padding: 21px 0 0 15px;}
+#album .album-box .deco-text {
+  width: 100%; height: 21px;
+  font: 700 1.2em/21px 'Roboto', sans-serif;
+  color: #ff4413;
+}
+#album .album-box h3 {
+  width: 100%; height: 42px;
+  font: 700 1.6em/1.5 'Roboto', sans-serif;
+  margin-bottom: 42px;
+}
+#album .album-box .date {
+  width: 100%; height: 42px;
+  font: 400 1.5em/1.5 'Roboto', sans-serif;
+  color: #888;
+}
+#album .scroll-btn {bottom: 0;}
+
+
+
+ /* *************** artist Area Start ***************** */
+ #artist {
+   padding-top: 252px; margin-bottom: 105px;
+   background: url(../images/artist-bg.png) no-repeat top center;
+   position: relative;
+ }
+ #artist::before, #artist::after {
+   content: ''; display: block;
+   width: 100%; height: 252px; background-color: #fff;
+   position: absolute; left: 0;
+ }
+ #artist::before{
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+   top: -1px;
+  }
+ #artist::after{
+   height: 378px;
+   bottom: 0;
+   clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+}
+#artist .container { text-align: center; } 
+
+/* title Area Start */
+#artist .title{width: 100%; height: 189px; margin-bottom: 63px;}
+#artist .title h2{
+  width: 100%; height: 42px;
+  font: 500 6em/42px 'Roboto', sans-serif;
+  color: #fff;
+  margin-bottom: 63px;
+}
+#artist .title p{font-size: 1.6em; color: #fff;}
+
+/* content Area Start */
+#artist .content { 
+  width: 100%; height: 378px; position: relative; z-index: 10;
+}
+#artist .content li {width: 16.6%; height: 189px; float: left;}
+#artist .content li img { width: 100%; height: 100%; }
+
+#artist .scroll-btn {bottom: 10px;}
+
+
+
+ /* *************** news Area Start ***************** */
+#news h2{
+  width: 100%; height: 63px;
+  font: 500 6em/63px 'Roboto', sans-serif;
+  margin-bottom: 21px;
+}
+#news .content{
+  width: 100%; height: 420px;
+  border: 1px solid #ccc;
+}
+#news .content>div{float: left;}
+
+/* left-box Area Start */
+#news .left-box{width: 768px; height: 100%;}
+#news .left-box>div{
+  width: 265px; height: 100%; 
+  float: right;
+}
+#news .left-box>img{width: 500px; height: 100%; float: left;}
+#news .left-box .deco-text { 
+  font: 400 1em/21px 'Nanum Gothic', sans-serif;
+  color: #e74c3c;
+  padding: 21px 30px 10px 30px;
+}
+#news .left-box h3 { 
+  font: 400 1.8em/21px 'Nanum Gothic', sans-serif;
+  padding: 0 0 25px 25px;
+}
+#news .left-box .date {
+  font: 400 1.2em/21px 'Nanum Gothic', sans-serif;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0 4px 30px;
+}
+#news .left-box p {
+  font: 400 1.2em/1.2 'Nanum Gothic', sans-serif;
+  padding: 28px 22px 0 22px;
+}
+
+/* right-box Area Start */
+#news .right-box{width: 400px; height: 100%;}
+#news .right-box>div{width: 100%; height: 210px;}
+#news .right-box>div>div{width: 200px; height: 100%; float: right;}
+#news .right-box>div>img{width: 200px; height: 100%; float: left;}
+#news .right-box>div:last-child>div{
+  float: left; 
+  border-left: 1px solid #ccc;
+}
+#news .right-box .deco-text { 
+  font: 400 1em/21px 'Nanum Gothic', sans-serif;
+  color: #e74c3c;
+  padding: 21px 30px 10px 30px;
+}
+#news .right-box h3 { 
+  font: 400 1.8em/21px 'Nanum Gothic', sans-serif;
+  padding: 0 0 25px 25px;
+  margin-bottom: 55px;
+}
+#news .right-box .date {
+  font: 400 1.2em/21px 'Nanum Gothic', sans-serif;
+  border-top: 1px solid #ccc;
+  padding: 4px 0 4px 30px;
+}
+
+
+
+ /* *************** news-letter Area Start ***************** */
+#news-letter{
+  background: url(../images/news-letter-bg.png) no-repeat bottom center;
+  position: relative;
+}
+#news-letter::before, 
+#news-letter::after {
+  content: ''; display: block; width: 100%; height: 252px;
+  position: absolute; left: 0;
+  background-color: #fff;
+}
+#news-letter::before { 
+  top: -1px; 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+}
+#news-letter::after { 
+  bottom: 0; 
+  clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
+}
+#news-letter .container {
+  padding-top: 252px;
+  text-align: center;
+  color: #fff;
+}
+#news-letter .container h2{
+  width: 100%; height: 63px;
+  font: 500 6em/63px 'Roboto', sans-serif;
+  margin-bottom: 63px;
+}
+#news-letter .container h2+p{
+  font-size: 2em;
+  margin-bottom: 63px;
+}
+#news-letter .container #input_mail {
+  width: 800px; height: 50px;
+  text-align: center;
+  font: 400 1.8em/50px 'Roboto', sans-serif;
+  border: 1px dotted #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+#input_mail::-webkit-input-placeholder { 
+  color: #fff;
+}
+#input_mail::-moz-placeholder { 
+  color: #fff;
+}
+#input_mail:-ms-input-placeholder { 
+  color: #fff;
+}
+#input_mail:-moz-placeholder { 
+  color: #fff;
+}
+
+#news-letter .scroll-btn{
+  bottom: 190px;
+}
+
+
+ /* *************** users Area Start ***************** */
+#users .container { padding-top: 84px; }
+
+/* title Area Start */
+#users .title{width: 100%; height: 42px; margin-bottom: 126px;}
+#users .title h2{
+  width: 100%; height: 42px; 
+  font: 500 6em/42px 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* content Area Start */
+#users .content, 
+#users .content ul{
+  width: 100%; height: auto;
+}
+#users .content li {
+  width: 270px; height: 84px; margin: 0 30px 42px 0;
+  padding-left: 100px; float: left;
+  background: url(../images/user.png) no-repeat 0 0;
+}
+#users .content li:nth-child(4n) { margin-right: 0; }
+#users .content li:nth-child(n+9) { margin-bottom:  0; }
+#users .content li h3{
+  width: 100%; height: 42px;
+  font: 500 1.1428em/42px 'Roboto', sans-serif;
+  color: #777;
+}
+#users .content .select a { color: #777; }
+#users .scroll-btn{bottom: 10px;}
+
+
+
+
+ /* *************** footer Area Start ***************** */
+ #footer {
+   color: #fff; padding-top: 231px;
+   background: url(../images/footer-bg.png) no-repeat bottom center;
+   position: relative;
+ }
+ #footer::before, #footer::after {
+   content: ''; display: block; width: 100%;
+   position: absolute; left: 0; top: 0;
+ }
+ #footer::before {height: 100%; background-color: rgba(255, 42, 42, 0.5);}
+ #footer::after {
+   height: 252px; 
+   background-color: #fff;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+   top: -1px;
+}
+#footer>div {
+  position: relative; z-index: 10;
+}
+
+ 
+ /* *************** f-top Area Start ***************** */
+ #footer .f-top { margin-bottom: 95px;}
+#footer .f-top h2 {
+  width: 100%; height: 84px;
+  font: 700 3.5em/1.3 'Nanum Gothic', sans-serif;
+  margin-bottom: 63px;
+}
+#footer .f-top .content {width: 100%; height: auto;}
+#footer .f-top .content>div { width: 20%; height: 378px; float: left; }
+#footer .f-top .content>div li {margin-bottom: 21px;}
+#footer .f-top .content>div h3 {
+  width: 100%; height: 21px; margin-bottom: 42px;
+  font: 700 2.4em/21px 'Nanum Gothic', sans-serif;
+}
+#footer .f-top .content>div h4 {
+  width: 100%; height: 21px; 
+  font: 500 1.1428em/21px 'Roboto', sans-serif;
+}
+#footer .f-top .content>div p {
+  font-size: 1em;
+}
+
+
+
+ /* *************** f-bottom Area Start ***************** */
+#footer .f-bottom .deco-dot{ 
+  width: 126px; height: 42px; float: right;
+  padding-top: 15px;
+} 
+#footer .f-bottom .deco-dot li {
+  width: 8px; height: 8px; text-indent: -9999px; overflow: hidden;
+  border-radius: 50%; background-color: #fff; float: left;
+  margin-right: 10px;
+}
+#footer .f-bottom .deco-dot li:last-child { margin-right: 0; }
+#footer .f-bottom .deco-dot li:nth-child(1) { 
+  background-color: #0000ff;
+ }
+#footer .f-bottom .deco-dot li:nth-child(2) { 
+  background-color: #c44545;
+ }
+#footer .f-bottom .deco-dot li:nth-child(3) { 
+  background-color: #ff00ff;
+ }
+#footer .f-bottom .deco-dot li:nth-child(4) { 
+  background-color: #8dc445;
+ }
+#footer .f-bottom .deco-dot li:nth-child(5) { 
+  background-color: #c49945;
+ }
+#footer .f-bottom .deco-dot li:nth-child(6) { 
+  background-color: #f6ff00;
+ }
+#footer .f-bottom p {
+  width: 370px; height: 42px; float: left;
+  font: 700 1.4em/42px 'Nanum Gothic', sans-serif;
+}
+
+
+
+
+
+
+
